@@ -58,5 +58,5 @@ body {
 
 .skills-item {
   display:flex;
-  align-items:center;
+  text-align:center;
 }
