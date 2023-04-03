@@ -56,7 +56,27 @@ body {
   background-color:white;
 }
 
-.skills-item {
+.skills-inner {
   display:flex;
   text-align:center;
+  flex-direction:column;
+}
+
+.skills-inner p {
+  padding-bottom: 75px;
+}
+
+.skills-list {
+  display:flex;
+  justify-content: space-between;
+
+}
+
+.skils-name{
+  padding: 24px 0 ;
+  margin: 0 auto;
+  width: 80px;
+  color: #828282;
+  font-size: 14px;
+  height: 66px;
 }
