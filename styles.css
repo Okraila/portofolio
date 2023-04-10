@@ -51,9 +51,46 @@ body {
   width:100%;
 }
 
+.banner {
+  padding-bottom:100px;
+}
+
+@media screen and (max-width:485px) {
+  .banner-info{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:30px;
+  }
+}
+
+.banner-info h1{
+  max-width:100px;
+  font-weight:790px;
+}
+
+.banner-info p {
+  max-width:100px;
+}
+
+.banner-image {
+  width:100%;
+}
+
+@media screen and (max-width:760px) {
+  .banner{
+    padding:90px 0;
+  }
+}
+
 .about {
   padding:100px 0;
   background-color:white;
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: 600;
 }
 
 .skills-inner {
@@ -72,6 +109,10 @@ body {
 
 }
 
+.skills-item {
+  text-align:center;
+}
+
 .skils-name{
   padding: 24px 0 ;
   margin: 0 auto;
@@ -79,6 +120,11 @@ body {
   color: #828282;
   font-size: 14px;
   height: 66px;
+}
+
+.skills-star-list{
+  display:flex;
+  justify-content:center;
 }
 
 .portofolio {
