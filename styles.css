@@ -36,6 +36,10 @@ body {
   margin: 0 auto;
 }
 
+.header {
+
+}
+
 .header-list {
   display: flex;
   justify-content: space-between;
@@ -47,12 +51,81 @@ body {
   color:#828282;
 }
 
+.header-list li:hover {
+  color:black;
+}
+
 .header-img {
   width:100%;
 }
 
+@media screen and (max-width:480px) {
+  .menu-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    margin-left: 90%;
+    margin-top: 50px;
+    margin-right: 30px;
+  }
+}
+.menu-btn .bar {
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  transition: 0.3s;
+}
+
+.menu-btn .bar:nth-child(2) {
+  top: calc(50% - 9px);
+}
+
+.menu-btn .bar:nth-child(3) {
+  top: calc(50% + 9px);
+}
+
+.menu-btn.active .bar:nth-child(1) {
+  display: none;
+}
+
+.menu-btn.active .bar:nth-child(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.menu-btn.active .bar:nth-child(3) {
+  top: 50%;
+  transform: translate(-5);
+}
+
+.menu-btn.active .bar:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+@media screen and (max-width:760px) {
+  .banner{
+    padding:90px 0;
+  }
+}
+
 .banner {
   padding-bottom:100px;
+}
+
+.banner-info {
+  display:flex;
+  justify-content:space-between;
+  padding: 30px 0 30px 0;
+  align-items:center;
 }
 
 @media screen and (max-width:485px) {
@@ -74,12 +147,6 @@ body {
 
 .banner-image {
   width:100%;
-}
-
-@media screen and (max-width:760px) {
-  .banner{
-    padding:90px 0;
-  }
 }
 
 .about {
@@ -168,4 +235,13 @@ body {
 
 .portofolio-inner a:hover.portofolio-inner a::before {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contacts-inner {
+  text-align:center;
+}
+
+.contacts-list {
+  display:flex;
+  justify-content:center;
 }
