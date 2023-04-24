@@ -147,11 +147,16 @@ body {
 
 .banner-image {
   width:100%;
+  justify-content:center;
 }
 
 .about {
   padding:100px 0;
   background-color:white;
+}
+
+.bio-inner p {
+text-align: center;
 }
 
 .title {
@@ -244,4 +249,23 @@ body {
 .contacts-list {
   display:flex;
   justify-content:center;
+}
+
+.contacts-button {
+  left: -0.82%;
+  right: 0.82%;
+  top: 0%;
+  bottom: -35.29%;
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: white;
+}
+
+button {
+  background: #070707;
+  border-radius:20px;
+  width:180px;
+  height:42px;
 }
